@@ -22,6 +22,7 @@
         }
 
         body {
+            margin: 0;
             display: flex;
             flex-direction: column;
             background-image: linear-gradient(45deg, rgb(167, 167, 167), whitesmoke)
@@ -39,7 +40,8 @@
             background-color: black;
             color: whitesmoke;
             height: 60px;
-            margin: 40px 0px;
+            margin-bottom: 50px;
+            margin-bottom: 0;
         }
 
         section article {
@@ -58,7 +60,7 @@
         figure {
             text-align: center;
             font-size: 15px;
-            margin-bottom: 50px;
+            margin: 100px 0px;
         }
 
         figure img {
@@ -90,6 +92,10 @@
             padding-left: 20px;
             font-family: 'Noto Serif', serif;
         }
+
+        p > span {
+            font-weight: bolder;
+        }
     </style>
 </head>
 
@@ -117,12 +123,12 @@
         <section class="secoes" id="introducao">
             <article>
                 <h2>Atentado de 11 de setembro</h2>
-                <p>O <b>11 de setembro</b> ficou marcado na história como o dia em que atentados terroristas foram
+                <p>O <b>11 de setembro</b> ficou marcado na história como o dia em que <span>atentados terroristas</SPAN> foram
                     realizados em solo americano e resultaram na morte de quase três mil pessoas. Os terroristas
                     responsáveis pelo atentado eram vinculados a Al-Qaeda e realizaram seus ataques contra dois alvos: o
                     World Trade Center, localizado em Nova York, e o Pentágono, localizado em Washington.
                 </p>
-                <p>Os atentados de 11 de setembro tiveram como um dos grandes responsáveis Osama bin Laden e geraram
+                <p>Os atentados de 11 de setembro tiveram como um dos grandes responsáveis <span>Osama bin Laden</span> e geraram
                     grandes consequências a nível regional (nos EUA) e também mundial. Poucas semanas depois que
                     aconteceram, o governo norte-americano deu início à Guerra do Afeganistão, com o objetivo de
                     capturar o líder da Al-Qaeda.</p>
@@ -135,13 +141,13 @@
         <section class="secoes" id="causa">
             <article>
                 <h2>Causas e contexto histórico do atentado</h2>
-                <p>Os atentados de 11 de setembro foram realizados pela Al-Qaeda, que, na época, era liderada por Osama
-                    bin Laden, um árabe multimilionário e um dos fundadores dessa organização terrorista. As motivações
+                <p>Os atentados de 11 de setembro foram realizados pela <span>Al-Qaeda</span>, que, na época, era liderada por <span>Osama
+                    bin Laden</span> , um árabe multimilionário e um dos fundadores dessa organização terrorista. As motivações
                     que levaram bin Laden e a Al-Qaeda a realizarem atentados contra os Estados Unidos são o resultado
-                    de um longo processo que se iniciou na década de 1970.</p>
-                <p>Levando em consideração esse contexto, devemos entender que a motivação do ataque foi a inimizade
-                    existente dos fundamentalistas islâmicos e os Estados Unidos. Essa era motivada pelas intervenções
-                    dos norte-americanos nas nações do Oriente Médio e por seu apoio ao Estado de Israel.</p>
+                    de um longo <span>processo que se iniciou na década de 1970.</span> </p>
+                <p>Levando em consideração esse contexto, devemos entender que a motivação do ataque foi a <span>inimizade</span> 
+                    existente dos fundamentalistas islâmicos e os Estados Unidos. Essa era motivada pelas <span>intervenções
+                        dos norte-americanos</span>  nas nações do Oriente Médio e por seu <span>apoio ao Estado de Israel.</span></p>
             </article>
         </section>
         <section class="secoes" id="acontecimento">
@@ -168,7 +174,7 @@
                     atentado.</p>
                 <ul>
                     <li>
-                        <h3>World Trade Center e a imagem do atentado</h3>
+                        <h3 style="margin: 50px 0;">World Trade Center e a imagem do atentado</h3>
                     </li>
                 </ul>
                 <p>A imagem mais destacada desse ataque foi, naturalmente, a do ataque ao World Trade Center, pois,
@@ -217,10 +223,12 @@
         </section>
 
     </main>
-    <footer>
+    <footer style="margin-top: 50px;">
         <h3>Referências</h3>
-        <p>https://pt.wikipedia.org/wiki/11_de_setembro</p>
-        <p>https://mundoeducacao.uol.com.br/historiageral/11-setembro.htm</p>
+        <h4 style="margin-bottom: 0;">11 de Setembro - Wikipedia</h4>
+        <a style="text-decoration: underline; color:whitesmoke;" href="https://pt.wikipedia.org/wiki/11_de_setembro"><p>https://pt.wikipedia.org/wiki/11_de_setembro</p></a>
+        <h4 style="margin-bottom: 0;">11 de Setembro - Mundo Educação</h4>
+        <a style="text-decoration: underline; color:whitesmoke;" href="https://mundoeducacao.uol.com.br/historiageral/11-setembro.htm"><p>https://mundoeducacao.uol.com.br/historiageral/11-setembro.htm</p></a>
         <p><a href="#menunavegacao" style="text-decoration: underline; color:whitesmoke;">Voltar ao topo!</a></p>
     </footer>
     <div style="margin-top: 100px;"><a href="https://machadogustavo.github.io/UNIFESSPA-WebI/">Voltar</a></div>
