@@ -1,0 +1,26 @@
+#menunavegacao ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    list-style-type: none;
+    background-color: whitesmoke;
+
+}
+
+#menunavegacao li {
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Aboreto', cursive;
+}
+
+#menunavegacao a {
+    text-decoration: none;
+    color: black;
+}
+
+#menunavegacao li:hover {
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+}
