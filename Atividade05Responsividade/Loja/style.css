@@ -17,7 +17,7 @@ header {
   width: calc(100% - 60px);
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 h1 {
@@ -53,17 +53,21 @@ nav {
 
 /* MAIN */
 main {
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding: 0 60px;
 }
 
 .produto {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 20px 0 20px 0;
+  transition: gap 200ms;
+  border: #333 1px solid;
+  padding: 20px;
 }
 
 .produto > p:first-of-type {
@@ -80,16 +84,27 @@ main {
 
 .produto > div > a {
   color: #000;
+  font-weight: 600;
 }
 
 .produto > img {
   width: 250px;
 }
 
-@media screen and (max-width: 600px) {
-  nav div {
-    margin: 0;
-    padding: 0;
+.produto:hover, .produto:focus{
+  gap: 15px;
+}
+
+nav a:hover, nav a:hover {
+  background-color: white;
+  color: #333;
+}
+
+
+@media screen and (max-width: 700px) {
+  nav {
+    display: flex;
+    flex-direction: column;
   }
 
   nav div a {
@@ -99,17 +114,11 @@ main {
     align-items: center;
   }
 
-  nav div a a {
-    width: 100%;
-    float: left;
-    text-align: center;
-  }
-
   header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 0 50px 0;
   }
 
   header h1 {
