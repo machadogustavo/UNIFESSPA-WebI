@@ -117,6 +117,7 @@ footer > h2 {
         flex-direction: column;
         text-align: left;
         justify-content: center;
+
     }
 
     .sabores li {
@@ -125,6 +126,11 @@ footer > h2 {
 
     .sabores a {
         font-size: 15px;
+    }
+   
+    nav{
+      padding-left:50px;
+
     }
 }
 @media screen and (max-width: 600px) {
@@ -157,9 +163,9 @@ footer > h2 {
     footer p {
         font-size: 20px;
     }
-
-    header {
-        background-size: 600px;
-    }
     
+    nav{
+      padding: 10px 0px;
+
+    }
 }
