@@ -1,0 +1,129 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  padding: 30px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.menu > a {
+  padding: 30px;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.buy img {
+  width: 20px;
+  height: 20px;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 60px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.produto > p:first-of-type {
+  color: #333;
+}
+
+.produto > p {
+  margin-top: 10px;
+}
+
+.produto > div {
+  margin-top: 10px;
+}
+
+.produto > div > a {
+  color: #000;
+}
+
+.produto > img {
+  width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  nav div {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav div a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav div a a {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .produto > img {
+    width: 200px;
+  }
+}
