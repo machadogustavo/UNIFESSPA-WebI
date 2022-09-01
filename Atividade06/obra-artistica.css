@@ -4,14 +4,49 @@
     box-sizing: border-box;
 }
 
+.cards {
+    display: flex;
+}
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
 
+.card {
+    margin: 20px 20px;
+}
 
+.card > div > h3,p {
+    margin-bottom: 30px;
+}
 
+.card-img {
+    width: 100%;
+    height: 25vw;
+}
+
+.card img{
+    width: 100%;
+}
 
 @media screen and (max-width: 680px){
-
-    body {
-        background-color: red;
+    .cards{
+        flex-wrap: wrap;
     }
-    
-} 
+
+    .card-img {
+        height: auto;
+    }
+
+    .card > div > h3 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 420px){
+    .card-container{
+        flex-direction: column;
+    }
+
+}
+
