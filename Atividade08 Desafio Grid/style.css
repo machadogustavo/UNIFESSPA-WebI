@@ -8,11 +8,6 @@ img {
     width: 300px;
 }
 
-ody{
-    display: grid;
-    height: 100vh;
-    place-items: center;
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -22,3 +17,6 @@ ody{
     
   }
   
+*{
+  font-family: UBUNTU;
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ubuntu;
+  text-decoration: none;
+}
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.visor{
+    background-color: black;
+    color: whitesmoke;
+    padding: 30px;
+    text-align: end;
+    font-size: 100px;
+}
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: black;
+  padding: 20px;
+}
+
+.botao {
+  background-color: black;
+  padding: 20px;
+  border-radius: 2rem;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.zero {
+    grid-column-start: span 2;
+}
+
+.n {
+    background-color: gray;
+}
+.l1{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.c4{
+    background-color: orange;
+}
