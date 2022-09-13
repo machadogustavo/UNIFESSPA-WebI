@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ubuntu;
+    text-decoration: none;
+  }
+  
+  
+  body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    
+  }
+  
+  .calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    background-color: whitesmoke;
+    padding: 10px;
+  }
+
+  .botao {
+    background-color: purple;
+    padding: 20px;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-align: left;
+  }
+
+  .zero{
+    grid-column-start: span 2;
+  }
+
+  .enter {
+    grid-row-start: span 2;
+  }
