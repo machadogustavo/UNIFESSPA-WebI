@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 10px;
+}
+
+.botao {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.maisbotao {
+  grid-row-start: -5;
+  grid-row-end: -4;
+}

@@ -31,11 +31,10 @@ body {
 	background-color: #FFF;
 	text-decoration: none;
 	transition: .5s;
-	display: block;
-
+	display: flex;
 	border-bottom: 1px solid #9799A6;
+	justify-content: center;
 }
-
 .conteudoPrincipal {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -48,14 +47,13 @@ body {
 	text-align: center;
 }
 
-.conteudoPrincipal-cursos-link {
+.conteudoPrincipal-cursos-link{
 	height: 100px;
 	background-color: #FFF;
 	text-align: center;
 	margin: 1%;
 	transition: .3s;
 	box-shadow: 2px 2px 2px #CCC;
-	position: relative;
 }
 
 .conteudoPrincipal-cursos-link a {
@@ -65,16 +63,15 @@ body {
 	display: block;
 	width: 100%;
 	height: 100%;
-	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.conteudoPrincipal-cursos-link:hover {
+.conteudoPrincipal-cursos-link:hover{
 	box-shadow: 4px 4px 4px #CCC;
 }
 
-.conteudoPrincipal-cursos-link a:before {
+.conteudoPrincipal-cursos-link a:before{
 	content: '';
 	display: block;
 	width: 50px;
@@ -82,11 +79,11 @@ body {
 	margin: 10px auto;
 }
 
-.conteudoPrincipal-cursos-link:nth-child(even) a:before {
+.conteudoPrincipal-cursos-link:nth-child(even) a:before, .cursoos:nth-child(even) a:before {
 	background: url(../img/background1.svg) no-repeat;	
 }
 
-.conteudoPrincipal-cursos-link:nth-child(odd) a:before {
+.conteudoPrincipal-cursos-link:nth-child(odd) a:before, .cursoos:nth-child(odd) a:before {
 	background: url(../img/background2.svg) no-repeat;
 }
 
@@ -282,102 +279,4 @@ body {
 		margin-left: 1.5em;
 	}
 
-}
-
-/* EDIÇÃO */
-
-header > div {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.videoSobre-sobre{
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.videoSobre-button, .videoSobre-sobre{
-	margin-top: 30px;
-}
-
-.listaaa{
-	display: flex;
-	flex-direction: column;
-
-}
-
-.rodapePrincipal-patrocinadores-list{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.rodapePrincipal-contatoForm-fieldset{
-	display: flex;
-	justify-content: center;
-}
-
-@media screen and (min-width:1000px){
-	header > div {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	.cabecalhoPrincipal-nav{
-		display: flex;
-		flex-direction: row;
-	}
-
-	.conteudoPrincipal-cursos{
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		flex-wrap: wrap;
-		
-	}
-	.conteudoPrincipal-cursos > li{
-		width: 250px;
-	}
-
-	.videoSobre > div{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.videoSobre-video{
-		width: 52.5%;
-	}
-	.videoSobre-sobre{
-		width: 47.5%;
-	}
-	
-	.rodapePrincipal-navMap-list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.rodapePrincipal-navMap-list > div {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.rodapePrincipal-patrocinadores > div{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	.rodapePrincipal-patrocinadores-list {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		width: 100%;
-	}
-	
 }
