@@ -1,0 +1,60 @@
+/* MAIN -> DESTAQUES */
+#destaques {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.img-destaques {
+  width: 100%;
+  height: 100%;
+}
+
+.destaque-principal {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.destaque-categorias {
+  grid-row-start: 3;
+}
+
+.destaque-categorias > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+  gap: 5px;
+}
+
+.destaque-categorias > ul > li {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.destaque-categorias > ul > li > a {
+  color: #000;
+}
+
+.destaque-principal, .destaque-secundario {
+  position: relative;
+}
+
+.destaque-titulo {
+  position: absolute;
+  margin-top: -104px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.8rem;
+}

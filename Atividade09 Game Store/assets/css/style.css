@@ -1,0 +1,59 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    background-color: #f5f5f5;
+    grid-template-areas: 
+    'cabecalho'
+    'conteudo'
+    'rodape';
+    grid-template-columns: 1fr;
+    grid-template-rows: 1 1fr 1;
+}
+
+.flex-container {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    grid-area: cabecalho;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+
+main{
+    grid-area: conteudo;
+}
+/* FOOTER */
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #fff;
+}

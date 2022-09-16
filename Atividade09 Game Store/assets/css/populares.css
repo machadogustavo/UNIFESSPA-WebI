@@ -1,0 +1,60 @@
+/* MAIN -> CATEGORIAS POPULARES */
+.populares-cabecalho {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5px;
+    border-bottom: 2px solid #ccc;
+}
+
+.populares-cabecalho > h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.populares-cabecalho > button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.populares-conteudo {
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.populares-cards {
+    display: grid;
+    grid-template-rows: 30% 1fr;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.populares-cards > img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.populares-card-corpo {
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.populares-card-cabecalho > h5 {
+    font-size: 2rem;
+    color: #222;
+    font-weight: 700;
+}
+
+time {
+    color: #777;
+}
+
+.populares-card-descricao {
+    text-align: justify;
+}

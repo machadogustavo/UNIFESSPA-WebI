@@ -1,0 +1,19 @@
+/* HEADER -> MENU */
+nav {
+    display: flex;
+    width: 100%;}
+
+nav > a {
+    color: #333;
+    padding: 20px;
+}
+
+.active::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    margin-left: -20px;
+    padding: 0 20px;
+    height: 4px;
+    background-color: #4373f7;
+}
