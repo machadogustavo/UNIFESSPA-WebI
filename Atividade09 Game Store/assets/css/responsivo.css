@@ -1,8 +1,4 @@
 @media screen and (max-width: 900px) {
-  body {
-    background-color: red;
-  }
-
   #destaques {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -35,11 +31,6 @@
 }
 
 @media screen and (min-width: 1500px) {
-
-body{
-    background-color: rebeccapurple;
-}
-
 
 .populares-cards {
     display: grid;
