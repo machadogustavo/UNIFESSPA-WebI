@@ -1,5 +1,6 @@
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   body {
+    background-color: red;
   }
 
   #destaques {
@@ -24,13 +25,27 @@
   }
 
   .populares-cards {
-    display: grid;
     grid-template-rows: 60% 40%;
-    background-color: #fff;
     margin-top: 20px;
   }
 
   .populares-card-corpo {
     padding-top: 50px;
   }
+}
+
+@media screen and (min-width: 1500px) {
+
+body{
+    background-color: rebeccapurple;
+}
+
+
+.populares-cards {
+    display: grid;
+    grid-template-rows: 40% 40%;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+
 }
