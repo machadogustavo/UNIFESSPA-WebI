@@ -21,7 +21,6 @@
 
 .populares-conteudo {
     grid-template-columns: repeat(5, 1fr);
-
     gap: 20px;
 }
 
@@ -57,4 +56,6 @@ time {
 
 .populares-card-descricao {
     text-align: justify;
+    line-height: 1.6;
+    font-weight: 500;
 }

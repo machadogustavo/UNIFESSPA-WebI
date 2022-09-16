@@ -1,3 +1,36 @@
-@media screen and (min-width: 1200px){
-    
+@media screen and (max-width: 850px) {
+  body {
+  }
+
+  #destaques {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+  }
+
+  .destaque-secundario {
+    display: none;
+  }
+
+  .destaque-categorias > ul > li {
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .populares-conteudo {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .populares-cards {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    background-color: #fff;
+    margin-top: 20px;
+  }
+
+  .populares-card-corpo {
+    padding-top: 50px;
+  }
 }
