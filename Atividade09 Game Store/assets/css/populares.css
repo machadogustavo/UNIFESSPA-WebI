@@ -35,7 +35,13 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transition: 0.2s;
 }
+
+.populares-cards > img:hover {
+    transform: scale(0.9);
+}
+
 
 .populares-card-corpo {
     display: grid;
@@ -58,4 +64,8 @@ time {
     text-align: justify;
     line-height: 1.6;
     font-weight: 500;
+}
+
+#lol, #mario {
+    font-size: 1.40rem !important;
 }

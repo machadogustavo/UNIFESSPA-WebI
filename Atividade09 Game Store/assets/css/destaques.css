@@ -14,7 +14,26 @@
 .destaque-principal {
   grid-column: 1/3;
   grid-row: 1/3;
+  transition: 0.2s;
 }
+
+.destaque-principal:hover, .destaque-secundario:hover {
+  transform: scale(0.9);
+}
+
+.destaque-secundario{
+  transition: 0.2s;
+}
+
+.destaque-categorias > ul > li {
+  transition: 0.2s;
+}
+
+.destaque-categorias > ul > li:hover {
+  transform: scale(0.9);
+}
+
+
 
 .destaque-categorias {
   grid-row-start: 3;

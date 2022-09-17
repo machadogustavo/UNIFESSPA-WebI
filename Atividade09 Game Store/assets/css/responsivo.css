@@ -31,6 +31,9 @@
   .populares-card-corpo {
     padding-top: 50px;
   }
+  #lol, #mario {
+    font-size: 2rem !important;
+}
 }
 
 
@@ -43,5 +46,9 @@
     background-color: #fff;
     margin-top: 20px;
   }
+
+  #lol, #mario {
+    font-size: 2rem !important;
+}
 
 }
