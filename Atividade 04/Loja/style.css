@@ -1,0 +1,101 @@
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+}
+
+/* HEADER */
+header {
+  width: calc(100% - 60px);
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  padding: 30px;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+.menu > a {
+  padding: 30px;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.buy img {
+  width: 20px;
+  height: 20px;
+}
+
+/* MAIN */
+main {
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0 20px 0;
+  transition: gap 200ms;
+  border: #333 1px solid;
+  padding: 20px;
+}
+
+.produto > p:first-of-type {
+  color: #333;
+}
+
+.produto > p {
+  margin-top: 10px;
+}
+
+.produto > div {
+  margin-top: 10px;
+}
+
+.produto > div > a {
+  color: #000;
+  font-weight: 600;
+}
+
+.produto > img {
+  width: 250px;
+}
+
+.produto:hover, .produto:focus{
+  gap: 15px;
+}
+
+nav a:hover, nav a:hover {
+  background-color: white;
+  color: #333;
+}
