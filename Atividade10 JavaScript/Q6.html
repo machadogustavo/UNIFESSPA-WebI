@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 1</title>
+    <script>
+    //QUESTÃO 6
+    const totalEleitores = Number(prompt('Qual o total de eleitores?'));
+    const votosBrancos = Number(prompt('Qual o total de votos em brancos?'));
+    const votosNulos = Number(prompt('Qual o total de votos nulos?'));
+    const votosValidos = Number(prompt('Qual o total de votos válidos?'));
+
+    const porcetagemBrancos = (votosBrancos / totalEleitores) * 100;
+    const porcetagemNulos = (votosNulos / totalEleitores) * 100;
+    const porcetagemValidos = (votosValidos / totalEleitores) * 100;
+    alert(`
+    A porcetagem de votos em brancos é de ${porcetagemBrancos.toFixed(2)}%\n
+    A porcetagem de votos em nulos é de ${porcetagemNulos.toFixed(2)}%\n
+    A porcetagem de votos válidos é de ${porcetagemValidos.toFixed(2)}%
+    `);
+    </script>
+  </head>
+  <body></body>
+</html>

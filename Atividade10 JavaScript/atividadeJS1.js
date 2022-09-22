@@ -22,7 +22,7 @@ A duração da sua viagem foi de ${duracaoTotal} horas!
 const contaTotal = Number(prompt('Qual o valor total da conta?'));
 const dividirConta = Number(prompt('Vai dividir a conta para quantas pessoas?'));
 const contaDividida = contaTotal / dividirConta;
-alert(`A conta dividida deu ${contaDividida.toFixed(2)} por pessoa!`)
+alert(`A conta dividida deu R$ ${contaDividida.toFixed(2)} por pessoa!`)
 
 
 //QUESTÃO 4
@@ -30,14 +30,14 @@ const precoProduto = Number(prompt('Qual o preço do produto?'));
 const precoDesconto = precoProduto * 0.1
 const precoPDesconto = (precoProduto - precoDesconto)
 const precoDividido = precoProduto / 3
-alert(`O produto pago a vista tem o desconto de R$ ${precoDesconto.toFixed(2)} e fica no valor total de ${precoPDesconto}, já parcelado em três vezes fica ${precoDividido.toFixed(2)} por parcela!`);
+alert(`O produto pago a vista tem o desconto de R$ ${precoDesconto.toFixed(2)} e fica no valor total de R$ ${precoPDesconto}, já parcelado em três vezes fica R$ ${precoDividido.toFixed(2)} por parcela!`);
 
 //QUESTÃO 5
 const pagamentoFixo = 1200;
 const vendasTotal = Number(prompt('Qual o valor total de vendas?'));
 const comissaoVendas = vendasTotal * 0.15;
 const salarioTotal = comissaoVendas + pagamentoFixo;
-alert(`O seu total de vendas é: ${vendasTotal.toFixed(2)}\nA sua comissão de 15% dessas vendas é: ${comissaoVendas.toFixed(2)}, sendo assim seu salário total é: ${salarioTotal.toFixed(2)}`)
+alert(`O seu total de vendas é: ${vendasTotal.toFixed(2)}\nA sua comissão de 15% dessas vendas é: ${comissaoVendas.toFixed(2)}, sendo assim seu salário total é: R$ ${salarioTotal.toFixed(2)}`)
 
 //QUESTÃO 6
 const totalEleitores = Number(prompt('Qual o total de eleitores?'));
@@ -49,7 +49,7 @@ const porcetagemBrancos = (votosBrancos / totalEleitores) * 100;
 const porcetagemNulos = (votosNulos / totalEleitores) * 100;
 const porcetagemValidos = (votosValidos / totalEleitores) * 100;
 alert(`
-A porcetagem de votos em brancos é de ${porcetagemBrancos}%\n
-A porcetagem de votos em nulos é de ${porcetagemNulos}%\n
-A porcetagem de votos válidos é de ${porcetagemValidos}%
+A porcetagem de votos em brancos é de ${porcetagemBrancos.toFixed(2)}%\n
+A porcetagem de votos em nulos é de ${porcetagemNulos.toFixed(2)}%\n
+A porcetagem de votos válidos é de ${porcetagemValidos.toFixed(2)}%
 `)
