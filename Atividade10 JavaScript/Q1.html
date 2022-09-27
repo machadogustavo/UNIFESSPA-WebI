@@ -7,25 +7,102 @@
     <title>QUESTÃO 1</title>
     <script>
       //QUESTÃO 1
-      const jantar = Number(prompt("Valor do jantar R$"));
-      const garcom = jantar * 0.1;
-      const total = jantar + garcom;
-      alert(`
-    Taxa de Garçom R$: ${garcom.toFixed(2)}\n
-    Total a ser pago R$: ${total.toFixed(2)}
-    `);
+      //   const jantar = Number(prompt("Valor do jantar R$"));
+      //   const garcom = jantar * 0.1;
+      //   const total = jantar + garcom;
+      //   alert(`
+      // Taxa de Garçom R$: ${garcom.toFixed(2)}\n
+      // Total a ser pago R$: ${total.toFixed(2)}
+      // `);
+
+      const jantar = document.querySelector(".valorJantar")
+      const garcom = document.querySelector(".valorGarcom")
+
+      function valorGarcom() {
+
+        taxaGarcom = jantar * 0.1;
+        garcom.innerHTML = taxaGarcom;
+      }
+
+      valorGarcom();
+
+      console.log(jantar);
+
+      console.log('oi');
+
     </script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: ubuntu;
+        text-decoration: none;
+        color: black;
+        display: grid;
+        height: 100vh;
+        place-items: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 3;
+        place-items: center;
+        gap: 20px;
+      }
+
+      .formEntrada {
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        align-items: center;
+      }
+
+      .formSaida {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+      }
+
+      input {
+        height: 50px;
+        margin: 0 20px;
+        font-size: 1rem;
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body
-    style="
-      font-family: ubuntu;
-      text-decoration: none;
-      color: black;
-      display: grid;
-      height: 100vh;
-      place-items: center;
-    "
-  >
+  <body>
+    <div class="container">
+      <figure>
+        <img src="./imgs/restaurante.jpg" alt="" />
+        <caption></caption>
+      </figure>
+
+      <h1>Conta Restaurante</h1>
+
+      <div class="formEntrada">
+        <h4>Valor do Jantar</h4>
+        <input
+          type="text"
+          class="valorJantar"
+          placeholder="Quanto deu o jantar?"
+        />
+      </div>
+
+      <div class="formSaida">
+        <h3>Taxa de Garçom:</h3>
+        <input type="text" class="taxaGarcom" />
+        <h3>Total a ser pago:</h3>
+        <input type="text" />
+      </div>
+    </div>
+
     <a
       style="text-decoration: none; color: black"
       href="https://machadogustavo.github.io/UNIFESSPA-WebI/Atividade10%20JavaScript/index.html"
