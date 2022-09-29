@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 1</title>
+    <script>
+      //QUESTÃO 1
+      const produto = Number(prompt("Qual o valor do produto?"));
+      const produtoDesconto = produto * 0.15;
+      const produtoNovo = produto - produtoDesconto;
+      const resultado = function (produtoNovo) {
+        if (produtoNovo > 500) {
+          alert(`CARO, VALOR PRODUTO: R$ ${produtoNovo}`);
+        } else if (produtoNovo < 500) {
+          alert(`BARATO, VALOR PRODUTO: R$ ${produtoNovo}`);
+        } else {
+          alert("ENTRADA INVÁLIDA!");
+        }
+      };
+      resultado(produtoNovo);
+    </script>
+  </head>
+  <body></body>
+</html>

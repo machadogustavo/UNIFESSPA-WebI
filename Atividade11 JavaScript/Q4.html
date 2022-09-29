@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 2</title>
+    <script>
+      //QUESTÃO 4
+      let valorProduto = Number(
+        prompt("Qual o valor do seu produto para aplicarmos a promoção??")
+      );
+      let produtoDesconto = null;
+
+      const calcularDesconto = function (valorProduto) {
+        if (valorProduto < 200) {
+          produtoDesconto = valorProduto - valorProduto * 0.01;
+          alert(
+            `Você ganhou 10% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
+              2
+            )}`
+          );
+        } else if (valorProduto > 200 && valorProduto <= 500) {
+          produtoDesconto = valorProduto - valorProduto * 0.15;
+          alert(
+            `Você ganhou 15% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
+              2
+            )}`
+          );
+        } else if (valorProduto > 500) {
+          produtoDesconto = valorProduto - valorProduto * 0.2;
+          alert(
+            `Você ganhou 20% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
+              2
+            )}`
+          );
+        } else {
+          alert(`Valor inválido!`);
+        }
+      };
+      calcularDesconto(valorProduto);
+    </script>
+  </head>
+  <body></body>
+</html>

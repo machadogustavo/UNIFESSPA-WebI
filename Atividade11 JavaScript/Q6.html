@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 2</title>
+    <script>
+      //QUESTÃO  6
+
+      let numeroPessoas = Number(prompt('Quantas pessoa vão entrar?'))
+      let numeroPeixes = Number(prompt('Quantos peixes vocês pegaram?'))
+      const entrada = 20
+      const peixeExtra = 12
+      let ValorFinal = 0
+
+      const CalcularValorFinal = function(numeroPessoas,numeroPeixes,ValorFinal){
+          ValorFinal = (numeroPessoas * entrada) + (numeroPeixes * peixeExtra)
+          alert(`O valor a pagar é ${ValorFinal}, foram ${numeroPessoas} entrada e ${numeroPeixes} peixes extras`)
+      }
+
+      CalcularValorFinal(numeroPessoas,numeroPeixes,ValorFinal)
+    </script>
+  </head>
+  <body></body>
+</html>

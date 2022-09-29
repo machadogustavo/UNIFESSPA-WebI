@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 2</title>
+    <script>
+      //QUESTÃO 2
+      let valorInvestimentoRenda = 0;
+      const tipoInvestimento = prompt("Qual o tipo de investimento?");
+      let valorInvestimento = Number(prompt("Qual o valor a ser investido?"));
+
+      const calculoInvestimento = function (
+        tipoInvestimento,
+        valorInvestimento
+      ) {
+        if (
+          tipoInvestimento == "poupanca" ||
+          tipoInvestimento == "poupança" ||
+          tipoInvestimento == "Poupança"
+        ) {
+          valorInvestimentoRenda = valorInvestimento + valorInvestimento * 0.05;
+          alert(
+            `O seu investimento do tipo ${tipoInvestimento}, rendeu o total de ${valorInvestimentoRenda}`
+          );
+        } else if (
+          tipoInvestimento == "Fundo de renda fixa" ||
+          tipoInvestimento == "fundo de renda fixa" ||
+          tipoInvestimento == "FUNDO DE RENDA FIXA"
+        ) {
+          valorInvestimentoRenda = valorInvestimento + valorInvestimento * 0.1;
+          alert(
+            `O seu investimento do tipo ${tipoInvestimento}, rendeu o total de ${valorInvestimentoRenda}`
+          );
+        } else {
+          alert(`Entrada inválida!`);
+        }
+      };
+
+      calculoInvestimento(tipoInvestimento,valorInvestimento)
+    </script>
+  </head>
+  <body></body>
+</html>
