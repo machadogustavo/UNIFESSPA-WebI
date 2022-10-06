@@ -6,39 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUESTÃO 2</title>
     <script>
-      //QUESTÃO 4
-      let valorProduto = Number(
-        prompt("Qual o valor do seu produto para aplicarmos a promoção??")
-      );
-      let produtoDesconto = null;
+      //QUESTÃO 5
 
-      const calcularDesconto = function (valorProduto) {
-        if (valorProduto < 200) {
-          produtoDesconto = valorProduto - valorProduto * 0.01;
-          alert(
-            `Você ganhou 10% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
-              2
-            )}`
-          );
-        } else if (valorProduto > 200 && valorProduto <= 500) {
-          produtoDesconto = valorProduto - valorProduto * 0.15;
-          alert(
-            `Você ganhou 15% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
-              2
-            )}`
-          );
-        } else if (valorProduto > 500) {
-          produtoDesconto = valorProduto - valorProduto * 0.2;
-          alert(
-            `Você ganhou 20% de desconto,seu produto ficou no valor de R$ ${produtoDesconto.toFixed(
-              2
-            )}`
-          );
-        } else {
-          alert(`Valor inválido!`);
+      function centenaInverter() {
+        
+        var centena = prompt("Digite um centena:");
+        var centenaInvertido = '';
+
+        if(centena >= 100 && centena <= 999){
+
+          for (let i = centena.length - 1; i >= 0; i--) {
+          centenaInvertido += centena[i];
         }
-      };
-      calcularDesconto(valorProduto);
+          return alert(`A centena ${centena} invertida é ${centenaInvertido}`)
+        }
+
+        else if(centena < 100 || centena > 999){
+          alert('Não é uma centena!')
+        }
+
+        else{
+          alert('Entrada Inválida')
+        }
+        
+      }
+
+      centenaInverter()
+      
+
     </script>
   </head>
   <body></body>
