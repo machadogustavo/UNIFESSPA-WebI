@@ -5,7 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUESTÃO 1</title>
-    <script src="./atividadeJS3.js"></script>
+    <script>
+
+
+//QUESTÃO 1
+var intervaloDentro = 0
+var intervaloFora = 0
+    
+function entrada(numero,entradaDados){
+
+    let i = 0
+
+    while(i < 10) {
+        i++
+        var numero = Number(prompt("Digite um valor"));
+
+        if(numero >= 10 && numero <=20){
+            intervaloDentro = (intervaloDentro + 1)
+        }
+
+        else{
+            intervaloFora = (intervaloFora + 1)
+        }
+    }
+
+    alert(`${intervaloDentro} números estão dentro do intervalo entre 10 e 20 e ${intervaloFora} números estão fora deste intervalo!`);
+
+}
+
+entrada()
+    </script>
   </head>
   <body></body>
 </html>
