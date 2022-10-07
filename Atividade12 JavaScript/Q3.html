@@ -10,10 +10,17 @@
       var total = Number(prompt('Qual o valor total da compra?'))
 
       var parcelas = 6;
-
+      var ajuste = (Math.floor(totalParcela * 100) / 100)
       var totalParcela = total / parcelas
 
-      if()
+      if((parcelas * ajuste) != total){
+        parcelas = 0
+        console.log('Valor da compra abaixo de 20, não tem parcelamento!');
+      }
+
+      else{
+        alert(`Parcelas: ${parcelas}\n Valor por parcela: ${totalParcela.toFixed(2)}`)
+      }
 
 
 
