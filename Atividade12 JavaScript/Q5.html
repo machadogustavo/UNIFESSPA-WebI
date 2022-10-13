@@ -5,7 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUESTÃO 5</title>
-    <script src="./atividadeJS3.js"></script>
+    <script>
+      var tParcelas = [];
+      var parcela = 0,
+        bParcela = 0,
+        cParcela = 0,
+        aParcela = 0,
+        i = 0,
+        nParcelas = 0,
+        dParcela = 0,
+        eParcela = 0;
+
+      vConta = Number(prompt("Informe o valor da sua conta: "));
+      nParcelas = Number(
+        prompt("Informe em quantas vezes voce quer parcelar sua conta: ")
+      );
+      op = Number(
+        prompt("Para parcelar em boleto digito 1, para carne digite 2: ")
+      );
+
+      function calc() {
+        parcela = vConta / nParcelas;
+        aParcela = parcela.toFixed(0);
+        if (parcela != aParcela) {
+          bParcela = parcela - aParcela;
+          cParcela = bParcela * nParcelas;
+          while (i < nParcelas) {
+            tParcelas[i] = aParcela;
+            i++;
+          }
+          dParcela = parseFloat(tParcelas[i - 1]);
+          eParcela = dParcela + cParcela;
+          tParcelas[i - 1] = eParcela;
+        } else {
+          while (i < nParcelas) {
+            tParcelas[i] = parcela;
+            i++;
+          }
+        }
+        alert(
+          "O valor das suas parcelas sÃ£o respectivamente: " + tParcelas + "."
+        );
+      }
+
+      calc();
+    </script>
   </head>
   <body></body>
 </html>
