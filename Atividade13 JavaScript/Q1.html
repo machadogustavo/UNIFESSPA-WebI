@@ -11,6 +11,7 @@
 
       const alunosNomes = [];
       const alunosNotas = [];
+      var saidaAlunos = ''
 
       for (i = 0; i <= 4; i++) {
         var entrada = String(prompt("Escreva nomes dos alunos!"));
@@ -22,6 +23,13 @@
 
       const tamanhoNotas = alunosNotas.length;
 
+      for(i = 0; i < tamanhoNotas; i++){
+
+        saidaAlunos += `Aluno: ${alunosNomes[i]} Nota: ${alunosNotas[i]}\n`
+
+      }
+
+
       const SomaNotas = alunosNotas.reduce(function (total, numero) {
         return total + numero;
       });
@@ -29,6 +37,7 @@
       alert(`Foram digitados ${tamanhoNotas} nomes e notas!`);
       alert(`Os nomes digitados foram: ${alunosNomes}`);
       alert(`As notas digitadas foram: ${alunosNotas}`);
+      alert(saidaAlunos)
       alert(`A média das notas digitadas é: ${SomaNotas / tamanhoNotas}`);
     </script>
   </head>

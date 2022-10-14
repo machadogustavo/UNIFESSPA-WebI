@@ -13,15 +13,16 @@
       var entrada2 = 0;
       const nomes = [];
       const idades = [];
+      const InfoJuntos = []
       var laco = true;
 
       while ((laco = true)) {
-        if (entrada1 == "Fim" || entrada1 == "FIM" || entrada1 == "fim") {
+        if (entrada1.toLowerCase() == 'fim') {
           laco = false;
           break;
         } else {
           entrada1 = String(prompt("Escreva seu nome"));
-          if (entrada1 == "Fim") {
+          if (entrada1.toLowerCase() == 'fim') {
             laco = false;
             break;
           } else {
@@ -32,14 +33,35 @@
         }
       }
 
-      const CalcularfilaPreferencial = (e) => e >= 60;
-      const CalularfilaNormal = (e) => e <= 59;
+      for(i = 0; i < idades.length; i++){
+        InfoJuntos[i] = {
+          Nome: nomes[i],
+          Idade: idades[i]
 
-      const Preferencial = idades.filter(CalcularfilaPreferencial);
-      const Normal = idades.filter(CalularfilaNormal);
+        }
 
-      alert(`Idades que vão para fila Preferencial: ${Preferencial}`);
-      alert(`Idades que vão para fila Normal ${Normal}`);
+      }
+
+
+      let FilterfilaPreferencial = InfoJuntos.filter(e => e.Idade >= 60)
+      let FilterfilaNormal = InfoJuntos.filter(e => e.Idade < 60)
+
+
+      let filaNormal = []
+      FilterfilaNormal.forEach(n => {
+        filaNormal.push(n.Nome)
+      });
+
+      let filaPreferencial = []
+      FilterfilaPreferencial.forEach(n => {
+        filaPreferencial.push(n.Nome)
+      });
+
+     
+
+      alert(`A fila Normal ficou assim: ${filaNormal}`)
+
+      alert(`A fila Preferencial ficou assim: ${filaPreferencial}`)
     </script>
   </head>
   <body></body>
