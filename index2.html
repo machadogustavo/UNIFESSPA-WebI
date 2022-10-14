@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIFESSPA Web I</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: black;
+        text-decoration: none;
+        font-family: Ubuntu;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-auto-rows: 2fr;
+        padding: 50px;
+        gap: 80px;
+        background-color: blue;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .atvcard {
+        display: flex;
+        width: 300px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-radius: 1rem;
+        transition: 0.2s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .atvcard-text > h2,
+      h3,
+      h4 {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Atividades - Desenvolvimento de Sistemas Web I</h2>
+      <h3>Gustavo P. Machado 202040602016</h3>
+    </header>
+
+    <main>
+      <a href="">
+        <div class="atvcard">
+          <img src="./imgs/atv1.png" alt=""/>
+          <div class="atvcard-text">
+            <h2>Atividade 1</h2>
+            <h3>Lista de Exercícios 01 - HTML</h3>
+            <h4>Questão 1 - Currículo</h4>
+            <h4>Questão 2 - Currículo</h4>
+            <h4>Questão 3 - Currículo</h4>
+            <h4>Questão 4 - Currículo</h4>
+            <h4>Questão 5 - Currículo</h4>
+            <div class="rodapecard">
+                <h4>Gustavo Paixão Machado</h4>
+                <h4>Gustavo Paixão Machado</h4>
+              </div>
+          </div>
+        </div>
+      </a>
+    </main>
+
+    <footer>
+      <a href="https://github.com/machadogustavo/UNIFESSPA-WebI">
+        <i class="fa fa-github"></i>
+        Repositório GitHub
+      </a>
+    </footer>
+  </body>
+</html>
