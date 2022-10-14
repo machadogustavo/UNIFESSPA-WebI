@@ -14,8 +14,8 @@ const produto = {
 }
 
 
-// const {nome, peso} = produto
-// console.log(nome,peso);
+const {nome, peso} = produto
+console.log(nome,peso);
 
 
 // const {nome: n, peso: p} = produto
@@ -26,8 +26,8 @@ const produto = {
 
 // console.log(produto);
 
-const {fabricante: {nome: nf,cnpj: cf}} = produto
-console.log(nf, cf);
+// const {fabricante: {nome: nf,cnpj: cf}} = produto
+// console.log(nf, cf);
 
 
 

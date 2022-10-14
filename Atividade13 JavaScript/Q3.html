@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 3</title>
+    <script>
+      //gustavo machado 202040602016
+      //QUESTÃO 3
+
+      const ValoresTemperaturas = [];
+      var dia = 1;
+
+      for (i = 0; i < 7; i++) {
+        var entrada = Number(prompt(`Escreva a temperatura do dia: ${dia}`));
+        ValoresTemperaturas.push(entrada);
+        dia += 1;
+      }
+
+      const somaTemperatura = ValoresTemperaturas.reduce(function (
+        total,
+        numero
+      ) {
+        return total + numero;
+      });
+
+      const maiorTemperatura = ValoresTemperaturas.reduce(function (a, b) {
+        return Math.max(a, b);
+      });
+
+      const menorTemperatura = ValoresTemperaturas.reduce(function (a, b) {
+        return Math.min(a, b);
+      });
+      const numeroDias = ValoresTemperaturas.length;
+
+      alert(
+        `A temperatura média de todos os dias é: ${(
+          somaTemperatura / numeroDias
+        ).toFixed(2)}`
+      );
+
+      alert(`A maior temperatura é: ${maiorTemperatura}`);
+
+      alert(`A menor temperatura é: ${menorTemperatura}`);
+    </script>
+  </head>
+  <body></body>
+</html>

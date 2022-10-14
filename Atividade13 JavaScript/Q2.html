@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 2</title>
+    <script>
+      //gustavo machado 202040602016
+      //QUESTÃO 2
+
+      const ArrayA = [];
+      const ArrayM = [];
+
+      for (var i = 0; i < 10; i++) {
+        if (i == 9) {
+          var entrada = Number(prompt("Digite último número!"));
+          x = entrada;
+        } else {
+          var entrada = Number(prompt("Digite um número"));
+          ArrayA.push(entrada);
+        }
+      }
+
+      const multiplicar = (e) => e * x;
+
+      arrayM = ArrayA.map(multiplicar);
+
+      alert(`Os dez número digitados foram ${ArrayA}`);
+      alert(`O último número X digitado foi: ${x}`);
+      alert(`Cada número digitado multiplicado pelo X é: ${arrayM}`);
+    </script>
+  </head>
+  <body></body>
+</html>

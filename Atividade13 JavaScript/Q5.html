@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 5</title>
+    <script>
+      //gustavo machado 202040602016
+      //QUESTÃO 5
+
+      var entrada1 = "";
+      var entrada2 = 0;
+      const nomes = [];
+      const idades = [];
+      var laco = true;
+
+      while ((laco = true)) {
+        if (entrada1 == "Fim" || entrada1 == "FIM" || entrada1 == "fim") {
+          laco = false;
+          break;
+        } else {
+          entrada1 = String(prompt("Escreva seu nome"));
+          if (entrada1 == "Fim") {
+            laco = false;
+            break;
+          } else {
+            nomes.push(entrada1);
+            entrada2 = Number(prompt("Escreva sua idade"));
+            idades.push(entrada2);
+          }
+        }
+      }
+
+      const CalcularfilaPreferencial = (e) => e >= 60;
+      const CalularfilaNormal = (e) => e <= 59;
+
+      const Preferencial = idades.filter(CalcularfilaPreferencial);
+      const Normal = idades.filter(CalularfilaNormal);
+
+      alert(`Idades que vão para fila Preferencial: ${Preferencial}`);
+      alert(`Idades que vão para fila Normal ${Normal}`);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 1</title>
+    <script>
+      //gustavo machado 202040602016
+      ///QUESTÃO 1
+
+      const alunosNomes = [];
+      const alunosNotas = [];
+
+      for (i = 0; i <= 4; i++) {
+        var entrada = String(prompt("Escreva nomes dos alunos!"));
+        alunosNomes.push(entrada);
+
+        var entrada = Number(prompt("Escreva notas dos alunos!!"));
+        alunosNotas.push(entrada);
+
+        i++;
+      }
+
+      const tamanhoNotas = alunosNotas.length;
+
+      const SomaNotas = alunosNotas.reduce(function (total, numero) {
+        return total + numero;
+      });
+
+      alert(`Foram digitados ${tamanhoNotas} nomes e notas!`);
+      alert(`Os nomes digitados foram: ${alunosNomes}`);
+      alert(`As notas digitadas foram: ${alunosNotas}`);
+      alert(`A média das notas digitadas é: ${SomaNotas / tamanhoNotas}`);
+    </script>
+  </head>
+  <body></body>
+</html>

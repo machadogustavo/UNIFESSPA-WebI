@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTÃO 6</title>
+    <script>
+      //gustavo machado 202040602016
+      //QUESTÃO 6
+
+      const saqueValidos = [];
+      const saquesInvalidos = [];
+
+      while (entrada != 0) {
+        var entrada = Number(prompt("Qual valor deseja sacar?"));
+
+        if (entrada == 0) {
+          Resultado();
+          break;
+        } else {
+          if (
+            entrada % 10 == 0 &&
+            entrada % 5 == 0 &&
+            entrada % 2 == 0 &&
+            entrada != 0
+          ) {
+            saqueValidos.push(entrada);
+            alert("Saque Válido!");
+          } else {
+            saquesInvalidos.push(entrada);
+            alert("Saque Inválido!");
+          }
+        }
+      }
+
+      function Resultado() {
+        const nInvalidos = saqueValidos.length;
+
+        const totalSaqueValidos = saqueValidos.reduce(function (total, numero) {
+          return total + numero;
+        });
+
+        alert(
+          `Seus saques válidos foram ${saqueValidos}\nDando o total de R$ ${totalSaqueValidos}\nForam ${nInvalidos} saques inválidos `
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
