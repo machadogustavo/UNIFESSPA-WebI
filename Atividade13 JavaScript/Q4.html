@@ -6,7 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QUESTÃO 4</title>
     <script>
+      //QUESTÃO 4
+      var alunos = [],
+        nome = "",
+        msg = "Os alunos em destaque foram:\n";
 
+      function validarNomeNota(nome, nota) {
+        if (nome == "" || nota == "") {
+          return false;
+        } else {
+          return true;
+        }
+      }
+
+      function lerNomeNota(nome, nota) {
+        let aluno = {};
+        aluno.nome = nome;
+        aluno.nota = nota;
+        alunos.push(aluno);
+      }
+
+      function alunosDestaques() {
+        destaques = alunos.filter((alunos) => alunos.nota >= 7);
+        if (destaques.length == 0) {
+          alert("Não há alunos em destaque na turma!");
+        } else {
+          for (let i = 0; i < destaques.length; i++) {
+            msg +=
+              destaques[i].nome + " com a nota: " + destaques[i].nota + "\n";
+          }
+          alert(msg);
+        }
+      }
+
+      while (nome != "Fim") {
+        nome = String(prompt("Informe o nome: "));
+        if (nome != "Fim") {
+          let nota = Number(prompt("Informe a nota: "));
+          if (validarNomeNota(nome, nota) == true) {
+            lerNomeNota(nome, nota);
+          } else if (validarNomeNota(nome, nota) == false) {
+            alert("Valores informados invalidos! Tente novamente!");
+          }
+        }
+      }
+
+      alunosDestaques();
     </script>
   </head>
   <body></body>
