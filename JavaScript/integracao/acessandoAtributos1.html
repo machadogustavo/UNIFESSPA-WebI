@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Acessando Atributos #01</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body class="conteudo exercicio">
+    <div>
+      <a href="www.unifesspa.edu.br">WebI</a>
+    </div>
+    <div id="primeiro">
+      <img src="imgs/logo-estreita.jpg" alt="logo" />
+    </div>
+    <script>
+      const img = document.querySelector("img");
+      console.log("getAttribute", img.getAttribute("src"));
+      console.log("src", img.src);
+    </script>
+  </body>
+</html>

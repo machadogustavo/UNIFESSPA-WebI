@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+    background-color: #FFFFFF;   
+}
+
+body h1{
+    color: #131013;
+    margin-bottom: 2rem;
+}
+
+main {
+    background-color: #F6EFF4;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.begin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.begin img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 0.5rem;
+}
+
+.begin h2 {
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.begin button {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+
+.content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.questionQtd {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questionText {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5C0A98;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+button:hover, button:focus{
+    background-color: #F64C32;
+
+}
+
+.finish {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.finish span {
+    font-size: 1.5rem;
+}
+
+.finish button{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.finish .resultTexts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.finish .resultTexts > div {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.finish .resultTexts > div > h2 {
+    margin-top: 0.5rem;
+}
+
+.finish .resultTexts > div > iframe{
+    width: 70%;
+}

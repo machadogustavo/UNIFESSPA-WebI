@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modificando HTML #01</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+
+  <body class="conteudo exercicio">
+    <script>
+
+      const body = document.querySelector("body");
+
+      const divOne = document.createElement("div");
+      divOne.classList.add("destaque");
+      divOne.innerHTML = "Primeiro"
+
+      const divTwo = document.createElement("div");
+      divTwo.setAttribute("primeiro-attr","valor");
+      divTwo.innerHTML = "Segundo"
+
+      const p = document.createElement("p")
+      p.innerHTML = "Parágrafo"
+
+      const divThree = document.createElement("div")
+      divThree.appendChild(p)
+      divThree.innerHTML = "Terceiro"
+
+      body.appendChild(divOne)
+      body.appendChild(divTwo)
+      body.appendChild(divThree)
+
+      const texto = document.createTextNode("lore impsun lore impsun lore impsun")
+      divThree.insertBefore(texto,divThree.childNodes[0])
+
+      const divFour = divThree.cloneNode(true)
+
+
+      body.appendChild(divFour)
+
+
+      body.removeChild(divFour)
+
+    </script>
+  </body>
+</html>
